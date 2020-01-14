@@ -1,0 +1,8 @@
+function solution(heights) {
+    return heights.map((top, index) => {
+        const list = heights.slice(0,index+1).reverse();
+        const find = list.findIndex(element => element > top);
+        
+        return find > 0 ? list.length - find : 0;
+    });
+}
