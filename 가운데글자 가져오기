@@ -1,0 +1,9 @@
+function solution(s) {
+    const stringLength = s.length;
+    const answerNum = stringLength / 2;
+    if(stringLength % 2 === 0) {
+        return s.substring(answerNum - 1, answerNum + 1);
+    }else if (stringLength %2 === 1) {
+        return s.substring(answerNum, answerNum + 1);
+    }
+}
