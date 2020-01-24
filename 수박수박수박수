@@ -1,0 +1,13 @@
+const solution = (n) => {
+    const su = '수';
+    const park = '박';
+    const answer = [];
+    for(let i = 0; i < n; i ++) {
+        if(i % 2 === 0) {
+            answer.push(su);
+        }else {
+            answer.push(park);
+        }
+    }
+    return answer.join('');
+}
