@@ -1,0 +1,10 @@
+function solution(numbers) {
+    numbers.sort(function(i, j){
+        return (
+            String(j).length < 2 ? j + '0' : j
+        ) - (
+            String(i).length < 2 ? i + '0' : i
+        )
+    })
+    return numbers.join('');
+}
