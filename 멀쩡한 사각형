@@ -1,0 +1,14 @@
+function solution(w,h){
+    const limit = Math.min(w, h);
+    let answer = 0;
+    let GCF = 0;
+
+    for(let i = limit; i > 0; i --) {
+      if(w % i === 0 && h % i === 0){
+         GCF = i;
+         break;
+      }
+    }
+    answer = w * h - (w + h - (GCF))
+    return answer;
+}
