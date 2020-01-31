@@ -1,0 +1,19 @@
+function solution(s){
+    const array = s.split("");
+    let pCount = 0;
+    let yCount = 0;
+    
+    for(let i = 0; i < array.length; i ++) {
+        if(array[i] === 'p' || array[i] === 'P') {
+            pCount ++;
+        }
+        if(array[i] === 'y' || array[i] === 'Y') {
+            yCount ++;
+        }
+    }
+    if(pCount === yCount) {
+        return true;
+    }else {
+        return false;
+    }
+}
