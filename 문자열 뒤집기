@@ -1,0 +1,7 @@
+function solution(s) {
+    const array = s.split("");
+    const arr = array.reverse();
+    const answer = arr.join("");
+    
+    return answer;
+}
