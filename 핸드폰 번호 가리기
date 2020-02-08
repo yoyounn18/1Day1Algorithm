@@ -1,0 +1,10 @@
+function solution(phone_number) {
+    const publicNum = phone_number.substring(phone_number.length - 4, phone_number.length + 1);
+    const privateNum = phone_number.substring(0, phone_number.length - 4);
+    let arrStar = [];
+    for(let i = 0; i < privateNum.length; i ++) {
+        arrStar.push('*');
+    }
+    const answer = arrStar.join("") + publicNum;
+    return answer;
+}
