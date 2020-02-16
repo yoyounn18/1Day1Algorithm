@@ -1,0 +1,6 @@
+function solution(n)
+{
+    let temp = 0;
+    const answer = n.toString().split("").map(v => temp += parseInt(v, 10));
+    return answer[answer.length - 1];
+}
