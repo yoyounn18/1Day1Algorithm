@@ -1,0 +1,5 @@
+function solution(n) {
+    const nn = n.toString().split("").sort((a, b) => b - a).join("");
+    const answer = parseInt(nn, 10);
+    return answer;
+}
